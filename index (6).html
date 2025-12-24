@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Custom Cake Booking</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #fff3e8;
+}
+
+header {
+  background-color: #8d4b32;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+
+.container {
+  padding: 20px;
+}
+
+form {
+  background-color: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+}
+
+h2 {
+  text-align: center;
+  color: #8d4b32;
+}
+
+label {
+  font-weight: bold;
+  margin-top: 10px;
+  display: block;
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+button {
+  margin-top: 15px;
+  width: 100%;
+  padding: 10px;
+  background-color: #8d4b32;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #6f3925;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  font-size: 14px;
+  color: #555;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>Sweet Treats Bakery</h1>
+  <p>Custom Cake Booking</p>
+</header>
+
+<div class="container">
+  <form onsubmit="bookCake(); return false;">
+    <h2>Order Your Custom Cake</h2>
+
+    <label>Customer Name</label>
+    <input type="text" id="name" required>
+
+    <label>Phone Number</label>
+    <input type="tel" id="phone" required>
+
+    <label>Cake Flavor</label>
+    <select id="flavor">
+      <option>Chocolate</option>
+      <option>Vanilla</option>
+      <option>Butterscotch</option>
+      <option>Red Velvet</option>
+      <option>Black Forest</option>
+    </select>
+
+    <label>Cake Size</label>
+    <select id="size">
+      <option>0.5 Kg</option>
+      <option>1 Kg</option>
+      <option>2 Kg</option>
+      <option>3 Kg</option>
+    </select>
+
+    <label>Message on Cake</label>
+    <input type="text" placeholder="Happy Birthday!" id="message">
+
+    <label>Delivery Date</label>
+    <input type="date" id="date" required>
+
+    <label>Additional Instructions</label>
+    <textarea rows="3" placeholder="Eggless, theme, color, etc."></textarea>
+
+    <button type="submit">Book Cake 🎂</button>
+  </form>
+</div>
+
+<footer>
+  © 2025 Sweet Treats Bakery | Designed by Thenmozhi
+</footer>
+
+<script>
+function bookCake() {
+  alert("🎉 Your custom cake order has been submitted successfully!");
+}
+</script>
+
+</body>
+</html>
